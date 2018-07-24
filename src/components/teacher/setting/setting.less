@@ -1,0 +1,51 @@
+#teacher-center-setting-wrap {
+    .card-wrap {
+        &:first-child .card-title {
+            border: none;
+        }
+    }
+    .card-title {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                float: left;
+                cursor: pointer;
+                padding: 0 10px;
+                margin-right: 60px;
+                &.active {
+                    color: #00B88D;
+                    height: 66px;
+                    border-bottom: 2px solid #00B88D;
+                }
+            }
+        }
+    }
+    .card-content {
+        &.base-info {
+            .user-info {
+                text-align: center;
+                .user-img {
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 60px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        &.account-info {
+            input {
+                float: right;
+                width: 820px;
+            }
+        }
+        .btn {
+            margin-top: 40px;
+            &.btn-success {
+                margin-left: 20px;
+            }
+        }
+    }
+}

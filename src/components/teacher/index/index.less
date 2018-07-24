@@ -1,0 +1,98 @@
+#teacher-index-wrap {
+    .main {
+        height: 800px;
+        background: url("../../../assets/images/teacher/bg.png") no-repeat 0 0;
+        color: #ffffff;
+        padding-top: 180px;
+        .main-container {
+            padding: 0;
+            .solo {
+                font-size: 70px;
+                text-align: center;
+                width: 640px;
+                margin: 0 auto;
+                margin-bottom: 120px;
+                p {
+                    font-size: 30px;
+                    position: relative;
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        height: 1px;
+                        width: 232px;
+                        background: #FFFFFF;
+                        left: 10px;
+                        top: 50%;
+                    }
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        height: 1px;
+                        width: 232px;
+                        background: #FFFFFF;
+                        right: 10px;
+                        top: 50%;
+                    }
+                }
+            }
+            li {
+                float: left;
+                width: 25%;
+                padding: 30px;
+                color: #333333;
+                text-align: center;
+                width: 266px;
+                height: 281px;
+                background: rgba(255, 255, 255, 0.8);
+                border-radius: 4px;
+                margin-right: 22px;
+                transition: all 0.3s ease-in-out;
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    color: #333333;
+                    .title {
+                        transition: all 0.3s ease-in-out;
+                    }
+                    span {
+                        width: 110px;
+                        height: 110px;
+                        display: inline-block; // transition: all 0.3s ease-in-out;
+                        &.icon-exercise {
+                            background: url('../../../assets/images/teacher/exercise.png') no-repeat 0 0;
+                        }
+                        &.icon-library {
+                            background: url('../../../assets/images/teacher/library.png') no-repeat 0 0;
+                        }
+                        &.icon-notice {
+                            background: url('../../../assets/images/teacher/notice.png') no-repeat 0 0;
+                        }
+                        &.icon-class {
+                            background: url('../../../assets/images/teacher/class.png') no-repeat 0 0;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    box-shadow: 6px 10px 19px 0px rgba(33, 33, 33, 0.5);
+                    .title {
+                        color: #00B88D;
+                    }
+                    .icon-exercise {
+                        background: url('../../../assets/images/teacher/exercise-selected.png') no-repeat 0 0;
+                    }
+                    .icon-library {
+                        background: url('../../../assets/images/teacher/library-selected.png') no-repeat 0 0;
+                    }
+                    .icon-notice {
+                        background: url('../../../assets/images/teacher/notice-selected.png') no-repeat 0 0;
+                    }
+                    .icon-class {
+                        background: url('../../../assets/images/teacher/class-selected.png') no-repeat 0 0;
+                    }
+                }
+            }
+        }
+    }
+}

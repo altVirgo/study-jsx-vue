@@ -1,0 +1,116 @@
+#start-wrap {
+    .logo {
+        margin: 40px 0 0 80px;
+    }
+    .operator-box {
+        position: absolute;
+        top: 400px;
+        right: 5%;
+        .solo {
+            font-size: 70px;
+            margin-bottom: 40px;
+        }
+        button {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            padding: 0;
+            border-radius: 25px;
+            font-size: 22px;
+            margin-right: 30px;
+            &.btn-login {
+                background-color: transparent;
+                border: 1px solid #999999;
+                color: #4A4E4D;
+            }
+            &.btn-region {
+                background-color: #00B88D;
+            }
+        }
+    }
+    .el-dialog {
+        .el-form-item__content {
+            border-bottom: 1px solid #c5c5c5;
+            input {
+                border: none;
+                outline: none;
+                width: 190px;
+                background-color: transparent;
+            }
+            button{
+                outline: none;
+            }
+        }
+        .el-form-item__label {
+            width: 80px;
+            text-align: justify;
+        }
+        select {
+            border: none;
+            outline: none;
+        }
+        &.login-box {
+            .remember-me {
+                float: left; // display: inline-block;
+                .el-checkbox {
+                    margin-left: 6px;
+                }
+            }
+            .forget-pw {
+                // display: inline-block;
+                float: right;
+            }
+            .btn {
+                width: 100%;
+                margin-top: 20px;
+            }
+            p {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        &.region-box {
+            .flex {
+                display: flex;
+            }
+            .flex-left {
+                width: 200px;
+                border-right: 1px solid rgb(202, 202, 202);
+                text-align: center;
+                span {
+                    width: 100px;
+                    height: 102px;
+                    display: inline-block;
+                    // border: 1px dotted #4A4E4D;
+                }
+                .teacher {
+                    span {
+                        background: url("../../assets/images/start/teacher.png") no-repeat 0 0;
+                    }
+                    &.active span {
+                        background: url("../../assets/images/start/teacher-selected.png") no-repeat 0 0;
+                    }
+                    border-right: 3px solid #ffffff;
+                }
+                .student {
+                    span {
+                        background: url("../../assets/images/start/student.png") no-repeat 0 0;
+                    }
+                    &.active span {
+                        background: url("../../assets/images/start/student-selected.png") no-repeat 0 0;
+                    }
+                    border-right: 3px solid #ffffff;
+                }
+                .active {
+                    color: #000000;
+                    border-right: 3px solid #00B88D;
+                }
+            }
+            .flex-right{
+                flex: 1;
+                padding-left: 100px;
+                padding-right: 40px;
+            }
+        }
+    }
+}

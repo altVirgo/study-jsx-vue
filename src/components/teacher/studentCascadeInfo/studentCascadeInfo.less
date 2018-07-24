@@ -1,0 +1,21 @@
+#student-cascade-wrap {
+    .school-box,
+    .class-box,
+    .student-box {
+        float: left;
+        margin-right: 30px;
+        .el-checkbox+.el-checkbox {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+    }
+    label.require{
+        float: left;
+        margin-left: 20px;
+        line-height: 40px;
+        padding-right: 10px;
+        &::after{
+            content: ''
+        }
+    }
+}

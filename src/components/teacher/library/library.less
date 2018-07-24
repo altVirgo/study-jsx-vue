@@ -1,0 +1,111 @@
+#teacher-library-wrap {
+    .main-top {
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 4px 0px rgba(215, 215, 215, 0.5);
+        p {
+            color: #999999;
+            line-height: 56px;
+            margin: 0;
+        }
+        .search-wrap {
+            width: 100%;
+            input {
+                width: 1000px;
+                float: left;
+                height: 44px;
+                line-height: 44px;
+                padding-left: 20px;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border: 1px solid #E5E5E5;
+                outline: none;
+            }
+            button {
+                float: left;
+                width: 160px;
+                height: 44px;
+                line-height: 44px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                margin-right: 0;
+                padding: 0;
+                outline: none;
+            }
+        }
+        .select-wrap {
+            padding-bottom: 20px;
+            margin-top: 10px;
+            .select-box {
+                float: left;
+                margin-right: 60px;
+                width: 90px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                input {
+                    border: none;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .main-container {
+        p.total-info {
+            height: 50px;
+            line-height: 50px;
+            color: #999999;
+            margin-bottom: 0;
+            text-indent: 20px;
+        }
+        .exercise-topic {
+            margin-bottom: 20px;
+        }
+        .exercise-options {
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .exercise-answer {
+            margin-top: 20px;
+            text-indent: 2em;
+        }
+        .card-wrap {
+            .card-footer {
+                padding: 0 20px;
+                .operator-box {
+                    float: left;
+                    color: #999999;
+                    font-size: 14px;
+                    span{
+                        margin-left: 120px;
+                        opacity: 0;
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            color: #00B88D;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .card-footer{
+                    background-color: #F7F7F7;
+                    span{
+                        opacity: 1;
+                    }
+                }
+            }
+            .exercise-no {
+                float: right;
+                color: #999999;
+            }
+        }
+        .el-checkbox {
+            float: left;
+            margin-right: 40px;
+        }
+        .el-pagination {
+            float: right;
+        }
+    }
+}

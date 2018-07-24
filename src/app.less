@@ -1,0 +1,230 @@
+#app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+ul ,ul li{
+    list-style: none;
+}
+
+.full-screen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 800px;
+    background: url("./assets/images/bg.png") no-repeat 0 0; // background-size: cover;
+}
+
+button.btn {
+    // border-radius: 17px;
+    font-size: 14px;
+    margin-right: 30px;
+    padding: .375rem 2rem;
+    outline: none;
+    &:active {
+        outline: none;
+    }
+    &.btn-gray {
+        border: 1px solid #E5E5E5;
+        color: #4A4E4D;
+        background-color: #E5E5E5;
+        &:hover {
+            border: 1px solid rgb(219, 219, 219);
+            background-color: rgb(219, 219, 219);
+        }
+    }
+    &.btn-blue {
+        background-color: #00B88D;
+        &:hover {
+            background-color: rgb(2, 163, 126);
+        }
+    }
+}
+
+.gray {
+    color: #4A4E4D;
+}
+
+div a {
+    color: #00B88D;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: rgb(2, 158, 122);
+    }
+    a.gray {
+        color: #4A4E4D;
+        &:hover {
+            color: rgb(65, 66, 66);
+        }
+    }
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #999;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #999;
+}
+
+.el-dialog__header {
+    padding: 20px 30px 10px;
+}
+
+.el-dialog__body {
+    padding: 30px 30px 60px;
+}
+
+.main {
+    background: #f4f4f4;
+    min-height: 830px;
+}
+
+.main-wrap {
+    padding-bottom: 100px;
+}
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer {
+    height: 200px;
+    text-align: center;
+    line-height: 24px;
+    padding-top: 60px
+}
+
+.card-wrap {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(215, 215, 215, 0.5);
+    overflow: hidden;
+    .card-title {
+        border-bottom: 2px solid #EEEEEE;
+        padding: 0 20px;
+        height: 66px;
+        line-height: 66px;
+        font-size: 16px;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .card-footer {
+        border-top: 2px solid #EEEEEE;
+        min-height: 44px;
+        line-height: 44px;
+        background-color: #ffffff;
+    }
+}
+
+.el-table {
+    border: 1px solid #E5E5E5;
+    border-bottom: none;
+    font-weight: normal;
+    thead {
+        th {
+            background-color: #EEEEEE;
+        }
+    }
+}
+
+label.require::before {
+    content: '*';
+    color: #FC5053;
+    width: 0;
+    position: relative;
+    left: -6px;
+}
+
+label.el-checkbox::after {
+    content: ''
+}
+
+label::after {
+    content: ':';
+    width: 0;
+    position: relative;
+    right: -6px;
+    font-weight: bold;
+}
+
+div label {
+    font-weight: normal;
+    padding-right: 20px;
+}
+
+div input,div textarea{
+    border-radius: 4px;
+    border: 1px solid #DCDCDC;
+    background-color: #F7F7F7;
+    padding: 0 10px;
+}
+
+body,
+div {
+    scrollbar-arrow-color: #f4ae21;
+    /**/
+    /*三角箭头的颜色*/
+    scrollbar-face-color: #333;
+    /**/
+    /*立体滚动条的颜色*/
+    scrollbar-3dlight-color: #666;
+    /**/
+    /*立体滚动条亮边的颜色*/
+    scrollbar-highlight-color: #666;
+    /**/
+    /*滚动条空白部分的颜色*/
+    scrollbar-shadow-color: #999;
+    /**/
+    /*立体滚动条阴影的颜色*/
+    scrollbar-darkshadow-color: #666;
+    /**/
+    /*立体滚动条强阴影的颜色*/
+    scrollbar-track-color: #666;
+    /**/
+    /*立体滚动条背景颜色*/
+    scrollbar-base-color: #f8f8f8;
+    /**/
+    /*滚动条的基本颜色*/
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #00B88D;
+    border-color: #00B88D;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner{
+    border-color: #00B88D;
+}
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #00B88D;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active  {
+    background-color: #00B88D;
+    color: #fff;
+}
+.el-pager li.active {
+    color: #00B88D;
+    cursor: default;
+}

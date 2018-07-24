@@ -1,0 +1,156 @@
+#student-homework-wrap {
+    .main {
+        background: rgb(244, 244, 244);
+    }
+    .main-top {
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 2px 4px 0px rgba(215, 215, 215, 0.5);
+        padding-bottom: 20px;
+        p {
+            color: #999999;
+            line-height: 56px;
+            margin: 0;
+        }
+        .search-wrap {
+            width: 100%;
+            input {
+                width: 1000px;
+                float: left;
+                height: 44px;
+                line-height: 44px;
+                padding-left: 20px;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border: 1px solid #E5E5E5;
+                outline: none;
+            }
+            button {
+                float: left;
+                width: 160px;
+                height: 44px;
+                line-height: 44px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                margin-right: 0;
+                padding: 0;
+                outline: none;
+            }
+        }
+    }
+    .main {
+        .main-container {
+            padding: 0;
+            .tab-index {
+                margin: 20px;
+                ul {
+                    padding: 0;
+                    li {
+                        width: 120px;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid transparent;
+                        float: left;
+                        list-style: none;
+                        color: #999999;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        text-align: center;
+                        &.active {
+                            border-color: #00B88D;
+                            color: #00B88D;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .list-item {
+                    float: left;
+                    width: 280px;
+                    height: 50px;
+                    line-height: 50px;
+                    position: relative;
+                    border-radius: 4px;
+                    border: 1px solid #E5E5E5;
+                    transition: all 0.3s ease-in-out;
+                    overflow: hidden;
+                    text-align: center;
+                    margin: 0 20px 20px 0;
+                    background-color: #ffffff;
+                    .item-name {
+                        position: absolute;
+                        width: 280px;
+                        height: 50px;
+                        padding: 0 10px;
+                    }
+                    .item-operator {
+                        position: absolute;
+                        width: 280px;
+                        height: 50px;
+                        top: 50px;
+                        background-color: #00B88D;
+                        transition: all 0.3s ease-in-out;
+                        color: #ffffff;
+                        padding: 0 10px;
+                        span {
+                            margin: 0 6px;
+                            cursor: pointer;
+                            &.btn-disable {
+                                opacity: 0.5;
+                                cursor: not-allowed;
+                            }
+                        }
+                    }
+                    &:hover {
+                        box-shadow: 1px -3px 14px 1px rgba(179, 220, 210, 1);
+                        border-color: #00B88D;
+                        .item-operator {
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .question-list {
+            .main-top {
+                font-size: 16px;
+                line-height: 70px;
+                height: 70px;
+                padding: 0;
+                margin-bottom: 20px;
+                .main-container {
+                    p {
+                        line-height: 70px;
+                        color: #333333;
+                        span{
+                            color: #999999;
+                            font-size: 12px;
+                        }
+                    }
+                    
+                    
+                }
+            }
+            .main-container{
+                .card-wrap.card-footer{
+                    padding: 12px 0;
+                    text-align: center;
+                    button{
+                        margin-right: 40px;
+                    }
+                    span{
+                        color: #999999;
+                    }
+                }
+            }
+            .exercise-topic {
+                padding: 10px 0 20px 0;
+            }
+        }
+    }
+}
+.red{
+    color: #F56C6C;
+}
+.green{
+    color: #67C23A;
+}
